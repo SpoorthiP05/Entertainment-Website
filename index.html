@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+<meta charset = "utf-8"/>
+<title>Entertainment</title>
+<link href="estyle.css"rel="stylesheet"type="text/css"/>
+</head>
+<header>
+<nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">365</a>
+      </div>
+	  
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="movies.html"><b>Movie</b></a></li>
+        <li><a href="#"><b>TV Series</b></a></li>
+        <li><a href="#"><b>Audio</b></a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+</header>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="abc1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="abc2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="abc3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="abc4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="abc5.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class="popular">
+<div class="Action">
+<h1>Popular in Action</h1></br>
+<hr>
+<div class="container">
+  <img src="oop1.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Last City</h3>
+    <p>Thriller, Mystery & Comedy.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop2.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Tomb Raider</h3>
+    <p>Indian crime tragedy film.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop3.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Japanese Marvel</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop4.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Bohemian</h3>
+    <p>Japanese manga series written by Tsugumi.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop5.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Justice League</h3>
+    <p>2003 American martial arts film.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop6.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Borgia</h3>
+    <p>Indian action drama film.</p>
+  </div>
+</div>
+
+</div>
+<div class="Action">
+<h1>Popular in Drama</h1></br>
+<hr>
+<div class="container">
+  <img src="oop7.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>The Nun</h3>
+    <p>2016 ‧ Fantasy/Science Fiction.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop8.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Avengers</h3>
+    <p>Indian crime tragedy film.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop9.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Japanese Marvel</h3>
+    <p>Thriller, Mystery & Comedy.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop10.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>TOmb Raider</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop11.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>FIGHTCLUB</h3>
+    <p>American martial arts film.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop12.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Myaoekai</h3>
+    <p>Indian crime tragedy film.</p>
+  </div>
+</div>
+</div>
+<div class="Action">
+<h1>Popular in Sci-Fi</h1></br>
+<hr>
+<div class="container">
+  <img src="oop13.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Red Wars</h3>
+    <p>Chinese crime thriller.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop14.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Florida</h3>
+    <p>Documentary eastern eravel.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop15.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>That Thing</h3>
+    <p>Thriller Romance Drama film.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop16.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>First Five</h3>
+    <p>South Korean Entertainment.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop17.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Shrooms</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="oop18.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Superman</h3>
+    <p>Indian comedy & Romance.</p>
+  </div>
+</div>
+
+</div>
+</div>
+<footer>
+<nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">365</a>
+      </div>
+	  <p style="margin-left:30px;font-size:20px;color:#4e4e47;">Powered by 365 Entertainment Portal 2019. All Rights Reserved.</p>
+	  </div>
+</nav>
+</footer>
+</body>
+</html>

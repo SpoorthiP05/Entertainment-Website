@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+<head>
+<meta charset = "utf-8"/>
+<title>Entertainment</title>
+<link href="estyle.css"rel="stylesheet"type="text/css"/>
+</head>
+<header>
+<nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">365</a>
+      </div>
+	  
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#"><b>Movie</b></a></li>
+        <li><a href="#"><b>TV Series</b></a></li>
+        <li><a href="#"><b>Audio</b></a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+</header>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="abc1%20(1).jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="abc2%20(1).jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="abc3%20(1).jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="abc4%20(1).jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="abc5%20(1).jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="popular">
+<div class="dropdown">
+ <button class="dropbtn">Genre   ▼</button>
+  <div class="dropdown-content">
+<a href="#">All</a>
+<a href="#">Action</a>
+<a href="#">Drama</a>
+<a href="#">Sci-Fi</a>
+</div>
+</div>
+<div class="search">
+<form class="example"style="margin-left:5px;">
+  <input type="text" placeholder="Search your favorite movie title" name="search" style="font-color:black">
+  <button type="submit" style="font-size:30px;padding:3px;margin-to:3px;color:black;"><i class="fa fa-search"></i>🔍</button>
+</form>
+</div>
+
+
+<div class="Action">
+<div class="container">
+  <img src="nano1.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Haider</h3>
+    <p>Indian crime tragedy film.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano2.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Dream 2</h3>
+    <p>Thriller, Mystery & Comedy</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano3.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Batman</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano4.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Monster Manav</h3>
+    <p>Japanese manga series written by Tsugumi.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano5.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Kill Bill</h3>
+    <p>2003 American martial arts film.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano6.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Rowdy</h3>
+    <p>Indian action drama film.</p>
+  </div>
+</div>
+
+<div class="container">
+  <img src="nano7.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Agnipaath</h3>
+    <p>Indian crime tragedy film.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano8.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Ankhein</h3>
+    <p>Thriller, Mystery & Comedy</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano9.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Guide</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano10.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Deewar</h3>
+    <p>2016 â€§ Fantasy/Science Fiction.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano11.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Sholay</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano12.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>K3G</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+</div>
+
+<div class="container">
+  <img src="nano13.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Shaurya</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano14.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Cheeni Kam</h3>
+    <p>Documentary eastern eravel.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano15.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>That Thing</h3>
+    <p>Thriller Romance Drama film.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano16.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>First Five</h3>
+    <p>South Korean Entertainment.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano17.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Shrooms</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano18.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Superman</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+</div>
+<div class="container">
+  <img src="nano19.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Last City</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano20.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Tomb Raider</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano21.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Japanese Marvel</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano22.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Bohemian</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano23.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Justice League</h3>
+    <p>2003 American martial arts film.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano24.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Borgia</h3>
+    <p>Indian action drama film.</p>
+  </div>
+</div>
+
+
+<div class="container">
+  <img src="nano25.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>The Nun</h3>
+    <p>2016 ‧ Fantasy/Science Fiction.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano26.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Avengers</h3>
+    <p>Indian crime tragedy film.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano27.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Japanese Marvel</h3>
+    <p>Thriller, Mystery & Comedy.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano28.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>TOmb Raider</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano29.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>FIGHTCLUB</h3>
+    <p>American martial arts film.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano30.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Myaoekai</h3>
+    <p>Indian crime tragedy film.</p>
+  </div>
+</div>
+
+<div class="container">
+  <img src="nano31.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Red Wars</h3>
+    <p>Chinese crime thriller.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano32.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Florida</h3>
+    <p>Documentary eastern eravel.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano33.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>That Thing</h3>
+    <p>Thriller Romance Drama film.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano34.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>First Five</h3>
+    <p>South Korean Entertainment.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano35.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Shrooms</h3>
+    <p>A Marvel Comics superhero team.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img src="nano36.jpg" style="width:100%;"/>
+  <div class="contents">
+    <h3>Superman</h3>
+    <p>Indian comedy & Romance.</p>
+  </div>
+</div>
+</div>
+</div>
+<footer>
+<nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">365</a>
+      </div>
+	  <p style="margin-left:30px;font-size:20px;color:#4e4e47;">Powered by 365 Entertainment Portal 2019. All Rights Reserved.</p>
+	  </div>
+</nav>
+</footer>
+</body>
+</html>
